@@ -1,0 +1,29 @@
+<!docktype html />
+<html ng-app="App">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+        <link href="../bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" rel="stylesheet"/>
+        <script src="../bower_components/angular/angular.min.js"></script>
+        <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/botstarp.min.js"></script>
+        <script src="index.js"></script>
+        <script src="screen1/index.js"></script>
+        <script src="screen1/ctrl.js"></script>
+        <script src="screen2/index.js"></script>
+        <script src="screen2/ctrl.js"></script>
+    </head>
+    <body>
+        <div>
+            <span>
+                Toolbar
+            </span>
+            <a ui-sref="screen1">Link 1</a>
+            <a ui-sref="screen2">Link 2</a>
+        </div>
+        <div ui-view></div>
+    </body>
+</html>
